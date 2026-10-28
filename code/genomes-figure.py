@@ -34,7 +34,7 @@ for i, v in enumerate(labels_vec):
 
 label_descr = pd.read_csv("{v}20131219.populations.tsv".format(v=paths.genomes_data), sep='\t')
 
-D_superpop = {"AFR":{'superpop_descr':"African", 'idx':[], 'L_colors':[]}, "EUR":{'superpop_descr':"European", 'idx':[], 'L_colors':[]}, "AMR":{'superpop_descr':"Central/South American", 'idx':[], 'L_colors':[]}, "SAS":{'superpop_descr':"South Asian", 'idx':[], 'L_colors':[]}, "EAS":{'superpop_descr':"East Asian", 'idx':[], 'L_colors':[]}}
+D_superpop = {"AFR":{'superpop_descr':"African", 'idx':[], 'L_colors':[]}, "EUR":{'superpop_descr':"European", 'idx':[], 'L_colors':[]}, "AMR":{'superpop_descr':"Admixed American", 'idx':[], 'L_colors':[]}, "SAS":{'superpop_descr':"South Asian", 'idx':[], 'L_colors':[]}, "EAS":{'superpop_descr':"East Asian", 'idx':[], 'L_colors':[]}}
 
 D_pop = {}
 for df_idx, df_row in label_descr.iterrows():

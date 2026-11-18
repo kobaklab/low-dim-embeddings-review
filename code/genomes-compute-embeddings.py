@@ -30,7 +30,7 @@ check_duplicates = False
 # Number of features: 53,999
 
 print('Loading {v} data'.format(v=paths.genomes_name))
-X_hd = np.loadtxt('{p}gt_sum_thinned.npy.gz'.format(p=paths.genomes_data))
+X_hd = np.load('{p}gt_sum_thinned.npz'.format(p=paths.genomes_data))['X'].astype(np.float64)
 X_hd_nopca = X_hd
 
 # Computing embeddings

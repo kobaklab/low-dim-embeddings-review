@@ -24,5 +24,5 @@ del(gt_values_replaced)
 
 gt_sum = gt_sum.T
 
-# output to compressed numpy file
-np.savetxt("gt_sum_thinned.npy.gz", gt_sum)
+# output to compressed numpy file (int8: genotype sums are in {0, 1, 2})
+np.savez_compressed("gt_sum_thinned.npz", X=gt_sum.astype(np.int8))
